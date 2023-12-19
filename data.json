@@ -1,0 +1,23 @@
+{
+    "olla":[
+      {
+        "id":1,
+        "name":"Unlimited Compnents",
+        "description":"Combine sections from Olla's vast component library and create beautiful.",
+        "image":"./assest/img/services1.svg"
+      },
+      {
+        "id":2,
+        "name":"Awesome Support",
+        "description":"Combine sections from Olla's vast component library and create beautiful.",
+        "image":"./assest/img/services2.svg"
+      },
+      {
+        "id":3,
+        "name":"Responsive Design",
+        "description":"Combine sections from Olla's vast component library and create beautiful.",
+        "image":"./assest/img/services3.svg"
+      }
+
+    ]
+}
