@@ -11,6 +11,18 @@
   outline: none;
 }
 
+.window {
+  position: fixed;
+  display: none;
+  bottom: 10px;
+  right: 30px;
+}
+.window i {
+  font-size: 40px;
+  color: #2845BA;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1350px;
   padding: 0px 32px;
@@ -19,7 +31,7 @@
 
 nav {
   width: 100%;
-  padding: 10px 0px;
+  padding-top: 15px;
 }
 nav .first {
   max-width: 1490px;
@@ -96,7 +108,7 @@ nav .first .navbar i {
 }
 
 .hr {
-  margin-top: 5px;
+  margin-top: 15px;
   width: 100%;
   height: 1px;
   background-color: gainsboro;
@@ -227,8 +239,10 @@ main .js {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  flex-wrap: wrap;
 }
 main .js .js-1 {
+  flex-direction: column;
   border-radius: 5px;
   width: 32%;
   display: flex;
@@ -237,10 +251,18 @@ main .js .js-1 {
   padding: 40px 0px;
   background-color: rgb(250, 232, 235);
   transition: all 0.5s ease;
+  position: relative;
 }
 main .js .js-1:hover {
   transition: all 0.7s ease;
   background: #f0f4fe;
+}
+main .js .js-1 i {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 20px;
 }
 main .js .js-1 .js-2 {
   width: 90%;
@@ -266,15 +288,51 @@ main .js .js-1 .js-2 p {
   font-weight: 600;
 }
 main .js .js-1 .js-2 button {
-  width: 120px;
-  padding: 7px 0px;
-  border-radius: 5px;
-  border-style: none;
-  background-color: rgb(127, 211, 239);
-  font-size: 14px;
-  font-weight: 800;
-  font-family: "Montserrat", sans-serif;
+  width: 150px;
+  padding: 8px 0px;
+  background-color: #2845BA;
+  border-radius: 6px;
+  color: white;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  border: 1px solid #2845BA;
+  transition: all 0.5s ease;
+}
+main .js .js-1 .js-2 button:hover {
   cursor: pointer;
+  transition: all 0.6s ease;
+  border: 1px solid #2845BA;
+  background-color: transparent;
+  color: #2845BA;
+}
+
+.load {
+  padding: 30px 0px;
+}
+.load .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load .more button {
+  width: 180px;
+  padding: 18px 0px;
+  background-color: #2845BA;
+  border-radius: 6px;
+  color: white;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  border: 1px solid #2845BA;
+  transition: all 0.5s ease;
+}
+.load .more button:hover {
+  cursor: pointer;
+  transition: all 0.6s ease;
+  border: 1px solid #2845BA;
+  background-color: transparent;
+  color: #2845BA;
 }
 
 .section3 {
@@ -532,7 +590,7 @@ footer .finish .finish-2 .quick-2 .icons i:hover {
 
 #add {
   width: 100%;
-  padding: 165px 0px;
+  height: 100vh;
   background-color: #7db9e8;
   display: flex;
   justify-content: center;
@@ -575,6 +633,31 @@ footer .finish .finish-2 .quick-2 .icons i:hover {
   font-weight: 600;
   color: white;
   cursor: pointer;
+}
+
+.come {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+}
+.come button {
+  width: 160px;
+  padding: 10px 0px;
+  background-color: #2845BA;
+  border-radius: 6px;
+  color: white;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  border: 1px solid #2845BA;
+  transition: all 0.5s ease;
+}
+.come button:hover {
+  cursor: pointer;
+  transition: all 0.6s ease;
+  border: 1px solid #2845BA;
+  background-color: transparent;
+  color: #2845BA;
 }
 
 @media screen and (max-width: 1290px) {

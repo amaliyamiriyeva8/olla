@@ -8,16 +8,16 @@ const form=document.querySelector("form")
 fetch(`http://localhost:3000/olla/${id}`)
 .then(res=>res.json())
 .then(data=>{
-    imageMdl.style.width="70px";
     imageMdl.style.height="70px";
-    imageMdl.src = data.image
-    name.value = data.name
-    description.value = data.description
+    imageMdl.style.width="70px";
+    imageMdl.src=data.image;
+    name.value=data.name;
+    description.value=data.description;
 })
  
 
 input.addEventListener("input",(e)=>{
-    let file=e.target.files[0];
+  let file=e.target.files[0];
     if(file){
         let reader=new FileReader();
         reader.readAsDataURL(file);
